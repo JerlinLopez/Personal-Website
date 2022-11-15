@@ -1,0 +1,14 @@
+$.ajax({
+  url: "https://script.google.com/macros/s/AKfycbwp-8NyH4xvA4PrbzC1uHkiSL4KGABkhRGzytOoB-tlLYecmMc-WPGJ4pynbOCemffS/exec",
+  data: $("#form").serialize(),
+  method: "post",
+  success: function (response) {
+    alert("Form submitted successfully")
+    window.location.reload()
+    //window.location.href="https://google.com"
+  },
+  error: function (err) {
+    alert("Something Error")
+
+  }
+})
